@@ -1,0 +1,6 @@
+#创建python==3.7的虚拟环境
+#conda create -n tf python==3.7
+
+#所有用到的环境
+tensorflow-gpu==1.14
+kashgari-tf
