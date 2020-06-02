@@ -136,24 +136,3 @@ macro avg     0.9329    0.9456    0.9392       662
 
 ##### 经过实验BiGRU_CRF_Model模型预测指标要高于BiLSTM_CRF_Model，f1-score要高出一个点，原因是GRU只有两个门，LSTM有三个门，参数量减少了1/3，不容易过拟合
 
-
-## 3.OCR-图片文字识别
-采用的是百度API实现,首先安装需要的python-sdk接口<br>
-```
-cd baidu_api
-python setup.py install
-```
-
-以下参数是在百度智能云控制台上,用自己账户创建ocr应用生成的,这里用x号注释了<br>[百度智能云](https://login.bce.baidu.com/?account=)
-
-APP_ID = 'xxxxxx'<br>
-API_KEY = 'xxxxxx'<br>
-SECRET_KEY = 'xxxxxx'<br>
-
-设置需要ocr的图片路径<br>
-get_file_content('data/table-pic-for-ocr.png')<br>
-
-运行
-```
-python ocr.py
-```
